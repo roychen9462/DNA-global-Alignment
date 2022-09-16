@@ -1,0 +1,3 @@
+ACTG
+0
+TACG
