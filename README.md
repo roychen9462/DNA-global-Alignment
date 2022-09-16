@@ -16,13 +16,25 @@ alpha_table = {132: 110,         # (A,C), (C,A)
                
 > Delta encode the penalty for putting a gap in the sequence
 delta = 30
+```
 
-```
 ### Usage
-The two programs will read the 
+In the begining, The two programs will read the input file to generate corresponding sequences automatically. After that, the program will output the aligned sequence, alignment score, time usage, and memory usage.
 ```
-python3 basic.py
-python3 efficient.py
+python3 basic.py test_case/input1.txt test_case/output1.txt
+python3 efficient.py test_case/input1.txt test_case/output1.txt
+```
+
+### Example output
+```
+python3 basic.py test_case/input1.txt test_case/output1.txt
+
+> output
+_A_CA_CACT__G__A_C_TAC_TGACTG_GTGA__C_TACTGACTGGAC GTGA__C_TACTGACTGGACTGACTACTGACTGGTGACTACT_GACTG_G
+TATTATTA_TACGCTATTATACGCGAC_GCG_GACGCGTA_T_AC__G_C G_GACGCGTA_T_AC__G_CT_ATTA_T_AC__GCGAC_GC_GGAC_GCG
+1296.0
+0.224
+31532.0
 ```
 
 ### CPU-time and Memory usage plot
